@@ -1,15 +1,19 @@
 # SpatialFilter
 
-Ip for image spatial filtering on Xilinx Zynq. For details watch
+IP for image spatial filtering on Xilinx Zynq. For details watch
 
-https://youtu.be/Zm3KzhahbUg
+Introduction: https://youtu.be/Zm3KzhahbUg
 
-https://youtu.be/n35zS__YEFQ
+Design of line buffer: https://youtu.be/n35zS__YEFQ
 
-https://youtu.be/6El_NQrpgCY
+Design of MAC: https://youtu.be/6El_NQrpgCY
 
-https://youtu.be/v8pHH-q-0sE
+Design of control logic: https://youtu.be/v8pHH-q-0sE
 
-https://youtu.be/v8xZ7ZlJ3ek
+IP packaging https://youtu.be/v8xZ7ZlJ3ek
 
-https://youtu.be/tO5pZ2K9U9I
+Simulation https://youtu.be/tO5pZ2K9U9I
+
+System Design https://youtu.be/r45dkUHIbk4
+
+Software Design https://youtu.be/IO0hTR3ymdA
