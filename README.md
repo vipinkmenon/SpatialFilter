@@ -17,3 +17,5 @@ Simulation https://youtu.be/tO5pZ2K9U9I
 System Design https://youtu.be/r45dkUHIbk4
 
 Software Design https://youtu.be/IO0hTR3ymdA
+
+Edge Detection https://youtu.be/TcjqZG2pbHw
