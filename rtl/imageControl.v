@@ -19,15 +19,15 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module imageControl(
-input    i_clk,
-input    i_rst,
-input [7:0] i_pixel_data,
-input    i_pixel_data_valid,
-output reg [71:0] o_pixel_data,
-output   o_pixel_data_valid
-    );
+input                    i_clk,
+input                    i_rst,
+input [7:0]              i_pixel_data,
+input                    i_pixel_data_valid,
+output reg [71:0]        o_pixel_data,
+output                   o_pixel_data_valid,
+output reg               o_intr
+);
 
 reg [8:0] pixelCounter;
 reg [1:0] currentWrLineBuffer;
@@ -67,11 +67,13 @@ begin
     begin
         rdState <= IDLE;
         rd_line_buffer <= 1'b0;
+        o_intr <= 1'b0;
     end
     else
     begin
         case(rdState)
             IDLE:begin
+                o_intr <= 1'b0;
                 if(totalPixelCounter >= 1536)
                 begin
                     rd_line_buffer <= 1'b1;
@@ -83,6 +85,7 @@ begin
                 begin
                     rdState <= IDLE;
                     rd_line_buffer <= 1'b0;
+                    o_intr <= 1'b1;
                 end
             end
         endcase
